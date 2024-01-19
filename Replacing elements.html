@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replacing elements using DOM manipulation</title>
+</head>
+<body>
+    <div class="container">
+        <li>Kenya</li>
+        <li>Uganda</li>
+        <li>Tanzania</li>
+        <button onclick="replaceContent()">Replace the content</button>
+        
+        <script>
+            const list = document.querySelector(".container");
+            function replaceContent(){
+                list.innerHTML=
+                "<li>zimbabwe</li>" +
+                "<li>Cameroon</li>" +
+                "<li>Ghana</li>" 
+            }
+
+        </script>
+    </div>
+</body>
+</html>
